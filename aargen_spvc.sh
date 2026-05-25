@@ -7,5 +7,5 @@ archmap["x86_64"]="x86_64"
 archmap["x86"]="x86"
 
 makearchspec () {
-   unzip -d ./aar-base/jni/$1 $PKGS_DIR/spvc-${archmap["$1"]}
+   cp $PKGS_DIR/${archmap["$1"]}/* ./aar-base/jni/$1
 }
